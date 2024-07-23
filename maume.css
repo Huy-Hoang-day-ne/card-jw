@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Chiếm toàn bộ chiều cao viewport */
+}
+
+.container {
+    width: 80%;
+    max-width: 300px; /* Đặt kích thước tối đa cho container */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Căn giữa toàn bộ nội dung bên trong container */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.product-image {
+    width: 100%;
+    text-align: center; /* Căn giữa ảnh bên trong khối chứa */
+    margin-top: 20px; /* Khoảng cách trên để hình ảnh xuống vài dòng pixel */
+}
+
+.product-image img {
+    width: 70%; /* Kích thước ảnh nhỏ hơn */
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-info {
+    width: 100%;
+    text-align: center; /* Căn giữa nội dung trong phần thông tin sản phẩm */
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.price {
+    font-size: 20px;
+    color: #d9534f;
+    margin-bottom: 10px;
+}
+
+.size {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center; /* Căn giữa các nút bấm */
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.btn-buy, .btn-add {
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-buy {
+    background-color: #007bff;
+}
+
+.btn-add {
+    background-color: #28a745;
+}
+
+.btn-buy:hover, .btn-add:hover {
+    opacity: 0.9;
+}
